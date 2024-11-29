@@ -39,14 +39,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['letra'])) {
 // Comprobar si se ha ganado o perdido
 if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
     session_destroy();
-    header("Location: ganador.php");
+    header("Location: ganador.html");
     exit();
 } elseif ($_SESSION['vidas'] <= 0) {
     session_destroy();
-    header("Location: perdedor.php");
+    header("Location: perdedor.html");   
     exit();
 }
 
+?>
 
 <!DOCTYPE html>
 <html lang="es">
