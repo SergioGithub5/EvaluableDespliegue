@@ -113,6 +113,26 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
             color: #012E40;
         }
 
+        button:hover {
+            background-color: #026773;
+            color: #fff;
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        p:hover {
+            color: #3CA6A6;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #D9534F;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+
     </style>
     <title>Ahorcado</title>
 </head>
